@@ -21,7 +21,7 @@ jobs:
       - run: npm run build
       - aws-s3/sync:
           from: build
-          to: 's3://NAME-OF-YOUR-S3-BUCKET-HERE/'
+          to: 's3://hit-parade-tondoy/'
           arguments: |
             --acl public-read \
             --cache-control "max-age=86400" \
